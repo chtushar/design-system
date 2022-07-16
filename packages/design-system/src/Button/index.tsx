@@ -364,14 +364,14 @@ const btnColorStyles = (props: ButtonProps, state: string): BtnColorType => {
 
 const getPaddingBySize = (props: ButtonProps) => {
   const paddingBySize = {
-    [Size.small]: `0px var(--ads-spaces-3)px`,
-    [Size.medium]: `0px var(--ads-spaces-7)px`,
+    [Size.small]: `0px var(--ads-spaces-3)`,
+    [Size.medium]: `0px var(--ads-spaces-7)`,
     [Size.large]: `0px 26px`,
   };
   const paddingBySizeForJustIcon = {
-    [Size.small]: `0px var(--ads-spaces-1)px`,
-    [Size.medium]: `0px var(--ads-spaces-2)px`,
-    [Size.large]: `0px var(--ads-spaces-3)px`,
+    [Size.small]: `0px var(--ads-spaces-1)`,
+    [Size.medium]: `0px var(--ads-spaces-2)`,
+    [Size.large]: `0px var(--ads-spaces-3)`,
   };
 
   const isIconOnly = !props.text && props.icon;
@@ -478,10 +478,10 @@ const ButtonStyles = css<ButtonProps>`
     }
   }
   .t--right-icon {
-    margin-left: var(--ads-spaces-1)px;
+    margin-left: var(--ads-spaces-1);
   }
   .t--left-icon {
-    margin-right: var(--ads-spaces-1)px;
+    margin-right: var(--ads-spaces-1);
   }
 `;
 
